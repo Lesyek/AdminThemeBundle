@@ -72,6 +72,7 @@ class AvanzuAdminThemeExtension extends Extension implements PrependExtensionInt
                                           $jsAssets . 'public/vendor/marionette/lib/backbone.marionette.js',
                                           $jsAssets . 'public/vendor/AdminLTE/js/bootstrap.js'
                                       ),
+                                      'output' => 'js/common.js',
                                   ),
                                   'tools_js'               => array(
                                       'inputs' => array(
@@ -80,6 +81,7 @@ class AvanzuAdminThemeExtension extends Extension implements PrependExtensionInt
                                           $jsAssets . 'public/vendor/holderjs/holder.js',
                                           $jsAssets . 'public/vendor/spinjs/spin.js',
                                       ),
+                                      'output' => 'js/tools.js',
                                   ),
                                   'admin_lte_js'           => array(
                                       'inputs' => array(
@@ -88,7 +90,8 @@ class AvanzuAdminThemeExtension extends Extension implements PrependExtensionInt
                                           $lteJs . 'plugins/datatables/dataTables.bootstrap.js',
                                           $lteJs . 'plugins/slimScroll/jquery.slimscroll.js',
                                           $jsAssets . 'public/js/adminLTE.js',
-                                      )
+                                      ),
+                                      'output' => 'js/admin-lte.js',
                                   ),
                                   'admin_lte_css'          => array(
                                       'inputs' => array(
@@ -102,7 +105,8 @@ class AvanzuAdminThemeExtension extends Extension implements PrependExtensionInt
                                           $lteCss . 'AdminLTE.css',
                                           $lteFont . 'fontawesome-webfont.eot',
                                           $lteFont . 'ionicons.eot',
-                                      )
+                                      ),
+                                      'output' => 'css/admin-lte.css',
                                   ),
                                   'admin_lte_forms_js'     => array(
                                       'inputs' => array(
@@ -111,49 +115,58 @@ class AvanzuAdminThemeExtension extends Extension implements PrependExtensionInt
                                           $lteJs . 'plugins/timepicker/bootstrap-timepicker.js',
                                           $lteJs . 'plugins/input-mask/jquery.inputmask.js',
                                           //   $lteJs.'plugins/input-mask/*',
-                                      )
+                                      ),
+                                      'output' => 'js/admin-lte-forms.js',
                                   ),
                                   'admin_lte_forms_css'    => array(
                                       'inputs' => array(
                                           $lteCss . 'colorpicker/bootstrap-colorpicker.css',
                                           $lteCss . 'daterangepicker/daterangepicker-bs3.css',
                                           $lteCss . 'timepicker/bootstrap-timepicker.css',
-                                      )
+                                      ),
+                                      'output' => 'css/admin-lte-forms.css',
                                   ),
                                   'admin_lte_wysiwyg'      => array(
                                       'inputs' => array(
                                           $lteJs . 'plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.js',
-                                      )
+                                      ),
+                                      'output' => 'js/admin-lte-wysiwyg.js',
                                   ),
                                   'admin_lte_wysiwyg_css'  => array(
                                       'inputs' => array(
                                           $lteCss . 'bootstrap-wysihtml5/bootstrap3-wysihtml5.css',
-                                      )
+                                      ),
+                                      'output' => 'css/admin-lte-wysiwyg.css',
                                   ),
                                   'admin_lte_morris'       => array(
                                       'inputs' => array(
                                           $lteJs . 'plugins/morris/morris.js',
-                                      )
+                                      ),
+                                      'output' => 'js/admin-lte-morris.js',
                                   ),
                                   'admin_lte_morris_css'   => array(
                                       'inputs' => array(
                                           $lteCss . 'morris/morris.css',
-                                      )
+                                      ),
+                                      'output' => 'css/admin-lte-morris.css',
                                   ),
                                   'admin_lte_flot'         => array(
                                       'inputs' => array(
                                           $lteJs . 'plugins/flot/*',
-                                      )
+                                      ),
+                                      'output' => 'js/admin-lte-flot.js',
                                   ),
                                   'admin_lte_calendar'     => array(
                                       'inputs' => array(
                                           $lteJs . 'plugins/fullcalendar/fullcalendar.js',
-                                      )
+                                      ),
+                                      'output' => 'js/admin-lte-calendar.js',
                                   ),
                                   'admin_lte_calendar_css' => array(
                                       'inputs' => array(
                                           $lteCss . 'fullcalendar/fullcalendar.css',
-                                      )
+                                      ),
+                                      'output' => 'css/admin-lte-calendar.css',
                                   ),
                                   'avatar_img'             => array(
                                       'inputs' => array(
@@ -169,7 +182,8 @@ class AvanzuAdminThemeExtension extends Extension implements PrependExtensionInt
                                           '@admin_lte_calendar',
                                           '@admin_lte_js',
                                           //  '@admin_lte_flot',
-                                      )
+                                      ),
+                                      'output' => 'js/admin-lte-all.js',
                                   ),
                                   'admin_lte_all_css'      => array(
                                       'inputs' => array(
@@ -178,7 +192,8 @@ class AvanzuAdminThemeExtension extends Extension implements PrependExtensionInt
                                           '@admin_lte_wysiwyg_css',
                                           '@admin_lte_forms_css',
                                           '@admin_lte_css'
-                                      )
+                                      ),
+                                      'output' => 'css/admin-lte-all.css',
                                   ),
                               )
                           )
