@@ -39,7 +39,7 @@
 
     {# --------------------------------------------------------------------------------------------- JAVASCRIPTS_HEAD #}
     {% block javascripts_head %}
-        {% javascripts '@AvanzuAdminThemeBundle/Resources/public/vendor/modernizr/modernizr.js' %}
+        {% javascripts '@AvanzuAdminThemeBundle/Resources/public/vendor/modernizr/modernizr.js' output='js/modernizr.js' %}
         <script type="text/javascript" src="{{ asset(asset_url) }}"></script>
         {% endjavascripts %}
         <!--[if lt IE 9]>
@@ -123,7 +123,7 @@
 
 {# ------------------------------------------------------------------------------------------------------ JAVASCRIPTS #}
 {% block javascripts %}
-    {% javascripts '@admin_lte_all' %}
+    {% javascripts '@admin_lte_all' output='js/admin-lte-all.js' %}
     <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
 {% endblock %}
