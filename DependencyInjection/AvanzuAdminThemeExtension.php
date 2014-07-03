@@ -171,7 +171,8 @@ class AvanzuAdminThemeExtension extends Extension implements PrependExtensionInt
                                   'avatar_img'             => array(
                                       'inputs' => array(
                                           '@AvanzuAdminThemeBundle/Resources/public/img/avatar.png'
-                                      )
+                                      ),
+                                      'output' => 'images/lte-avatar.png',
                                   ),
                                   'admin_lte_all'          => array(
                                       'inputs' => array(
