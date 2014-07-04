@@ -17,7 +17,7 @@
 
     <![endif]-->
 </head>
-<body class="bg-black">
+<body class="{% block body_class %}bg-black{% endblock %}">
 
 {% block page_content %}
     <div class="form-box" id="login-box">
